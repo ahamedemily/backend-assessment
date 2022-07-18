@@ -1,0 +1,31 @@
+ul {
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+}
+ul li { 
+    float:left;
+    width: 200px;
+    height: 40px;
+    background-color:#f99c06;
+    opacity: .8;
+    line-height: 40px;
+    text-align: center;
+    font-size: 15px;
+    border-style:solid;
+    border-color: blue;
+}
+ul li a {
+    text-decoration: none;
+    color:blue;
+    display: block;
+}
+ul li a:hover {
+    background-color: plum;
+}
+ul li ul li {
+    display: none;
+}
+ul li:hover ul li {
+    display: block;
+}

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+  <link rel="stylesheet" href="style.css">
+  <head>
+    <title>Back End Assessment</title>
+  </head>
+  
+  <body class="container" style="background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT0i7tsXfrZzjGaiiQni_boWMrzSPr39Y66HQ&usqp=CAU); background-repeat: no-repeat; background-size: 130%;">
+    
+    <button id="complimentButton" style="background-color:cornflowerblue; font-family:'Bebas Neue';font-size: 20px;
+    color: #f99c06; " >GET A COMPLIMENT</button>
+    <button id="fortuneButton" style="background-color:cornflowerblue; font-family:'Bebas Neue';font-size: 20px;
+    color: #f99c06;" >GET A FORTUNE</button>
+    <button id="angelNumberButton" style="background-color:cornflowerblue; font-family:'Bebas Neue';font-size: 20px;
+    color: #f99c06; " >WHAT'S YOUR ANGEL NUMBER?</button>
+    
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="main.js"></script>
+    <!-- //<button id="contactButton" style="background-color:cornflowerblue; font-family:'Bebas Neue';font-size: 20px;
+    color: #f99c06;" -->
+      <!-- <form id="contact" method="POST" action="/contact">
+      <div style="margin: 5px">
+        <label for="name">Full Name</label>
+        <input type="text" name="name"/>
+      </div>
+      <div style="margin: 5px;">
+        <label for="email">Your email</label>
+        <input type="text" name="email"/>
+      </div>
+      <div style="margin: 5px;">
+        <label for="goal">Your current goals</label>
+        <input type="text" name="goal"/>
+        <button type="submit">Submit</button>
+      </div>
+      </form> -->
+
+      <h1 style="margin-bottom:0;color:#f99c06">CONTACT US</h1>
+<form>
+  <input name="email" placeholder="Email Address" required>
+  <br />
+  <input type="hidden" name="_next" value="https://emily-ahamed.com/thankyou.html">
+  <input name="name" type="text" placeholder="Full Name" required>
+  <br />
+  <input name="goals" type="text" placeholder="Your Current Goals" required>
+  <br />
+  <button id="submit" style="color:#f99c06; margin-bottom: 10px;" type="submit">Submit</button>
+</form>
+</body>
+<ul>
+  <li><a>CLICK FOR MOTIVATION</a>
+  <ul>
+    <li style="float:left;width:200px;height:40px;background-color: #f99c06;opacity: 0.8;text-align: center;font-size: 15px;margin-right: 2px;"><a style="text-decoration:none;color:blue;display:block;">DON'T GIVE UP</a></li>
+    <li style="float:left;width:200px;height:40px;background-color: #f99c06;opacity: 0.8;text-align: center;font-size: 15px;margin-right: 2px;"><a style="text-decoration:none;color:blue;display:block;">YOU CAN DO IT!</a></li>
+    <li style="float:left;width:200px;height:40px;background-color: #f99c06;opacity: 0.8;text-align: center;font-size: 15px;margin-right: 2px;"><a style="text-decoration:none;color:blue;display:block;">YOU ARE CAPABLE</a></li>
+    <li style="float:left;width:200px;height:40px;background-color: #f99c06;opacity: 0.8;text-align: center;font-size: 15px;margin-right: 2px;"><a style="text-decoration:none;color:blue;display:block;">AVOID NEGATIVITY</a></li>
+    <li style="float:left;width:200px;height:40px;background-color: #f99c06;opacity: 0.8;text-align: center;font-size: 15px;margin-right: 2px;"><a style="text-decoration:none;color:blue;display:block;font-size: 10px;">TAKE CARE OF YOUR BODY & MIND</a></li>
+    <li style="float:left;width:200px;height:40px;background-color: #f99c06;opacity: 0.8;text-align: center;font-size: 15px;margin-right: 2px;"><a style="text-decoration:none;color:blue;display:block;">BE KIND TO YOURSELF</a></li>
+  </ul>
+</ul>
+</html>

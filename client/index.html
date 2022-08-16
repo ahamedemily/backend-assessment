@@ -14,8 +14,7 @@
     <button id="angelNumberButton" style="background-color:cornflowerblue; font-family:'Bebas Neue';font-size: 20px;
     color: #f99c06; " >WHAT'S YOUR ANGEL NUMBER?</button>
     
-    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
-    <script src="main.js"></script>
+  
     <!-- //<button id="contactButton" style="background-color:cornflowerblue; font-family:'Bebas Neue';font-size: 20px;
     color: #f99c06;" -->
       <!-- <form id="contact" method="POST" action="/contact">
@@ -36,6 +35,7 @@
 
       <h1 style="margin-bottom:0;color:#f99c06">CONTACT US</h1>
 <form>
+  <button id="contact-info-btn"</button>
   <input name="email" placeholder="Email Address" required>
   <br />
   <input type="hidden" name="_next" value="https://emily-ahamed.com/thankyou.html">
@@ -43,10 +43,11 @@
   <br />
   <input name="goals" type="text" placeholder="Your Current Goals" required>
   <br />
-  <button id="submit" style="color:#f99c06; margin-bottom: 10px;" type="submit">Submit</button>
+  <button id="submit" style="color:#f99c06; margin-bottom: 60px;" type="submit">Submit</button>
+</button>
 </form>
 </body>
-<ul>
+<!-- <ul>
   <li><a>CLICK FOR MOTIVATION</a>
   <ul>
     <li style="float:left;width:200px;height:40px;background-color: #f99c06;opacity: 0.8;text-align: center;font-size: 15px;margin-right: 2px;"><a style="text-decoration:none;color:blue;display:block;">DON'T GIVE UP</a></li>
@@ -56,5 +57,19 @@
     <li style="float:left;width:200px;height:40px;background-color: #f99c06;opacity: 0.8;text-align: center;font-size: 15px;margin-right: 2px;"><a style="text-decoration:none;color:blue;display:block;font-size: 10px;">TAKE CARE OF YOUR BODY & MIND</a></li>
     <li style="float:left;width:200px;height:40px;background-color: #f99c06;opacity: 0.8;text-align: center;font-size: 15px;margin-right: 2px;"><a style="text-decoration:none;color:blue;display:block;">BE KIND TO YOURSELF</a></li>
   </ul>
-</ul>
+</ul>  -->
+<section style="font-family:Bebas Neue; color:#f99c06;">
+  <b>Enter your goal:</b>
+  <input type="text" id="add-goal">
+<br> 
+<textarea type="text" rows="20" cols="40" id="add-motivation" placeholder="add some motivation here..."></textarea>
+      <button id="add-motivation-btn">Add Motivation</button>
+</section>
+
+<section id="display-section"></section>
+
+
+<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+<script src="main.js"></script>
+  </body>
 </html>

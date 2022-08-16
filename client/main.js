@@ -1,3 +1,5 @@
+const baseURL =  `http://localhost:4000/api`
+
 const complimentBtn = document.getElementById("complimentButton")
 
 const getCompliment = () => {
@@ -31,5 +33,29 @@ const getAngelNumber = () => {
             alert(data);
     });
 };
-
 angelNumberBtn.addEventListener('click', getAngelNumber)
+
+const displaySection = document.getElementById("display-section")
+const displayMotivation = (motivation) => {
+    const showMotivation = document.createElement("motivational")
+        showMotivation.textContent = motivation
+        displaySection.appendChild(showMotivation)
+}
+
+const postMotivationBtn = document.getElementById("add-motivation-btn")
+const motivationInput = document.getElementById("add-motivation")
+const postMotivationHandler = () => {
+    const body = {
+        motivation:motivationInput.value
+    }
+    console.log(motivationInput.value)
+    axios.post(`${baseURL}/goal/motivation`,body)
+    .then(res => {
+        //console.log(res.data)
+        motivationInput.value = ``
+        displayMotivation(res.data.motivation)
+    })
+    .catch(err => console.log(err))
+}
+
+postMotivationBtn.addEventListener("click",postMotivationHandler)

@@ -1,3 +1,38 @@
+const goalMotivation = [
+{ 
+    motivationId: 1,
+    motivation: `Don't give up`
+},
+{
+    motivationId: 2,
+    motivation: `You can do it!`
+},
+{
+    motivationId: 3,
+    motivation: `You are better than your worst days`
+},
+{
+    motivationId: 4,
+    motivation: `Avoid negativity`
+},
+{
+    motivationId: 5,
+    motivation: `Take care of your body and mind`
+},
+{
+    motivationId: 6,
+    motivation: `Be kind to yourself`
+},
+{
+    motivationId: 7,
+    motivation: `It's a bad day, not a bad life`
+}
+
+];
+
+let globalId = 8;
+
+
 module.exports = {
 
     getCompliment: (req, res) => {
@@ -26,5 +61,14 @@ module.exports = {
         let randomAngelNumber = angelNumbers[randomIndex];
       
         res.status(200).send(randomAngelNumber);
-    }
+    },
+    postMotivation: (req, res) => {
+        const {motivation} = req.body;
+        const newObj = {
+            motivationId:globalId,
+            motivation
+        }; 
+        goalMotivation.push(newObj)
+        res.status(200).send(newObj)
+    },
 };

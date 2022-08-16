@@ -21,6 +21,11 @@ const {getAngelNumber } = require('./controller')
 
 app.get("/api/angelNumber", getAngelNumber);
 
+const {postMotivation} = require('./controller')
+
+app.post("/api/goal/motivation", postMotivation);
+
+
 
 // app.post('/',(req,res)=>{
 //     const{parcel} = req.body

@@ -29,3 +29,7 @@ ul li ul li {
 ul li:hover ul li {
     display: block;
 }
+add-motivation{
+    font-family: Bebas Neue;
+    background-color: linear-gradient(#35706F,#9AC791,#c0c791);
+}

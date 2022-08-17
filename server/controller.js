@@ -30,6 +30,8 @@ const goalMotivation = [
 
 ];
 
+const contact = []
+let contactId = 1
 let globalId = 8;
 
 
@@ -70,5 +72,18 @@ module.exports = {
         }; 
         goalMotivation.push(newObj)
         res.status(200).send(newObj)
+    },
+    postContact: (req,res) => {
+       console.log(req.body) 
+       const{email,fullName,currentGoals} = req.body
+       const contactObj = {
+        id:contactId,
+        email,
+        fullName,
+        currentGoals,
+       }
+    contact.push(contactObj)
+    res.status(200).send('Info recieved')
+    contactId++
     },
 };

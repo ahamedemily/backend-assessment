@@ -35,15 +35,15 @@
 
       <h1 style="margin-bottom:0;color:#f99c06">CONTACT US</h1>
 <form>
-  <button id="contact-info-btn"</button>
-  <input name="email" placeholder="Email Address" required>
+  <!-- <button id="contact-info-btn"</button> -->
+  <input id="email" placeholder="Email Address" required>
   <br />
-  <input type="hidden" name="_next" value="https://emily-ahamed.com/thankyou.html">
-  <input name="name" type="text" placeholder="Full Name" required>
+  <!-- <input type="hidden" name="_next" value="https://emily-ahamed.com/thankyou.html"> -->
+  <input id="fullName" type="text" placeholder="Full Name" required>
   <br />
-  <input name="goals" type="text" placeholder="Your Current Goals" required>
+  <input id="goals" type="text" placeholder="Your Current Goals" required>
   <br />
-  <button id="submit" style="color:#f99c06; margin-bottom: 60px;" type="submit">Submit</button>
+  <button onclick="alert('Thank you, info was recieved!')"id="submitBtn" style="color:#f99c06; margin-bottom: 60px;" type="submit">Submit</button>
 </button>
 </form>
 </body>

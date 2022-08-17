@@ -59,3 +59,26 @@ const postMotivationHandler = () => {
 }
 
 postMotivationBtn.addEventListener("click",postMotivationHandler)
+
+const contactInfoBtn = document.getElementById("submitBtn")
+const emailInput = document.getElementById("email")
+const nameInput = document.getElementById("fullName")
+const goalsInput = document.getElementById("goals")
+const postContactHandler = () => {
+const body2 = {
+    email:email.value,
+    name: fullName.value,
+    goals: goals.value
+    }
+    axios.post(`${baseURL}/goal/contact`, body2)
+    .then(res => {
+        console.log(res.data)
+        email.value = ``
+        fullName.value = ``
+        currentGoals.value = ``
+        displayContact(res.data.contact)
+    })
+    .catch(err => console.log(err))
+}
+
+submitBtn.addEventListener('click',postContactHandler)

@@ -9,7 +9,7 @@ app.use(cors());
 
 app.use(express.json());
 
-const { getCompliment } = require('./controller')
+const { getCompliment, postContact} = require('./controller')
 
 app.get("/api/compliment", getCompliment);
 
@@ -24,6 +24,9 @@ app.get("/api/angelNumber", getAngelNumber);
 const {postMotivation} = require('./controller')
 
 app.post("/api/goal/motivation", postMotivation);
+
+app.post("/api/goal/contact", postContact)
+
 
 
 
